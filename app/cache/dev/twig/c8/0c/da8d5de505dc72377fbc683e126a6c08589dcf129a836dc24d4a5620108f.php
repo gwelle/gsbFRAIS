@@ -62,16 +62,16 @@ class __TwigTemplate_c80cda8d5de505dc72377fbc683e126a6c08589dcf129a836dc24d4a562
                 <td>
                     <h2> Bienvenue ";
         // line 18
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "nom"), "method"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "prenom"), "method"), "html", null, true);
         echo " 
                        ";
         // line 19
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "prenom"), "method"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "nom"), "method"), "html", null, true);
         echo "
                     </h2> 
                 </td>
                 <td>
-                    <h2> Gestion des Fiches de Frais </h2>
+                    <h2> Gestion des Fiches de Frais du Visiteur </h2>
                 </td>
                 <td>
                     <h3>
@@ -94,20 +94,37 @@ class __TwigTemplate_c80cda8d5de505dc72377fbc683e126a6c08589dcf129a836dc24d4a562
         <ul class=\"nav\">
             <li> <a href=\"";
         // line 41
-        echo $this->env->getExtension('routing')->getPath("gsb_consultation_frais");
+        echo $this->env->getExtension('routing')->getPath("gsb_consultation_frais_forfait");
         echo "\"
-                    title=\"Consultation\"><h4>Consulter mes fiches de frais</h4>
+                    title=\"Consultation\"><h4>Consulter fiches frais forfait</h4>
+                 </a>
+            </li>
+            
+            <li> <a href=\"";
+        // line 46
+        echo $this->env->getExtension('routing')->getPath("gsb_consultation_frais_hors_forfait");
+        echo "\"
+                    title=\"Consultation\"><h4>Consulter fiches frais hors forfait</h4>
                  </a>
             </li>
               
             <li> <a href=\"";
-        // line 46
+        // line 51
         echo $this->env->getExtension('routing')->getPath("gsb_saisie_frais");
         echo "\" 
-                    title=\"Saisie\"><h4>Saisir mes fiches de frais</h4>
+                    title=\"Saisie\"><h4>Saisir fiche frais forfait</h4>
                  </a> 
             </li>
-        </ul>
+             <li> <a href=\"";
+        // line 55
+        echo $this->env->getExtension('routing')->getPath("gsb_saisie_frais_hors_forfait");
+        echo "\" 
+                    title=\"Saisie\"><h4>Saisir fiche frais hors forfait</h4>
+                 </a> 
+            </li>
+            ";
+        // line 63
+        echo "        </ul>
     </div>
   </div>
 
@@ -126,6 +143,6 @@ class __TwigTemplate_c80cda8d5de505dc72377fbc683e126a6c08589dcf129a836dc24d4a562
 
     public function getDebugInfo()
     {
-        return array (  105 => 46,  97 => 41,  80 => 27,  69 => 19,  65 => 18,  57 => 12,  54 => 11,  48 => 7,  39 => 5,  35 => 4,  32 => 3,  29 => 2,);
+        return array (  127 => 63,  120 => 55,  113 => 51,  105 => 46,  97 => 41,  80 => 27,  69 => 19,  65 => 18,  57 => 12,  54 => 11,  48 => 7,  39 => 5,  35 => 4,  32 => 3,  29 => 2,);
     }
 }

@@ -43,16 +43,16 @@ class __TwigTemplate_e35a3ac31177f4d0c559038a29c85ebc129e4a2d29773052a7c7d3e84bb
                 <td>
                     <h2> Bienvenue ";
         // line 10
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "nom"), "method"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "prenom"), "method"), "html", null, true);
         echo " 
                        ";
         // line 11
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "prenom"), "method"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session"), "get", array(0 => "nom"), "method"), "html", null, true);
         echo "
                     </h2> 
                 </td>
                 <td>
-                    <h2> Gestion des Fiches de Frais </h2>
+                    <h2> Gestion des Fiches de Frais Visiteur </h2>
                 </td>
                 <td>
                     <h3>

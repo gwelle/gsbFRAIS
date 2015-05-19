@@ -1,30 +1,63 @@
 gsb_homepage:
     path:   /index
     defaults: { _controller: AheGsbBundle:Default:index }
+    
+    
 gsb_homepage_visiteurs:
     path:   /indexV
     defaults: { _controller: AheGsbBundle:FraisVisiteurs:accueilVisiteurs }
-gsb_homepage_visiteurs:
+    
+    
+gsb_homepage_comptable:
     path:   /indexC
     defaults: { _controller: AheGsbBundle:FraisComptable:accueilComptable }
+    
+    
 gsb_saisie_frais:
-    path: /saisieFrais
-    defaults: { _controller: AheGsbBundle:FraisVisiteurs:saisirFraisForfait }
+    path: /saisieFraisForfait
+    defaults: { _controller: AheGsbBundle:FraisVisiteurs:saisirFraisForfait}
+    
+    
+gsb_saisie_frais_hors_forfait:
+    path: /saisieFraisHorsForfait
+    defaults: { _controller: AheGsbBundle:FraisVisiteurs:saisirFraisHorsForfait }
+    
+    
 gsb_valide_frais:
     path: /valideFrais
     defaults: { _controller: AheGsbBundle:FraisComptable:validerFicheForfait }
-gsb_consultation_frais:
-    path: /consultationFrais
+    
+    
+gsb_consultation_frais_forfait:
+    path: /consultationFraisAuForfait
     defaults: { _controller: AheGsbBundle:FraisVisiteurs:consulterFraisForfait }
+    
+    
+gsb_consultation_frais_hors_forfait:
+    path: /consultationFraisHorsForfait
+    defaults: { _controller: AheGsbBundle:FraisVisiteurs:consulterFraisHorsForfait }
+    
+    
 gsb_consultation_Frais_Mois:
     path: /listeFraisForfait
     defaults: { _controller: AheGsbBundle:FraisVisiteurs:listerFraisForfait }
+    
+    
 gsb_visiteurs_deconnexion:
     path: /deconnexion
     defaults: { _controller: AheGsbBundle:Default:seDeconnecter }
+    
+    
 gsb_comptable_deconnexion:
     path: /deconnexion
     defaults: { _controller: AheGsbBundle:Default:seDeconnecter }
+    
+    
 gsb_suivi_paiement_frais:
     path: /suivrePaiement
     defaults: { _controller: AheGsbBundle:FraisComptable:suivrePaiementFicheForfait }
+    
+    
+#gsb_saisie_fh:
+#    path: /gsb
+#    defaults: { _controller: AheGsbBundle:FraisVisiteurs:creerFraisHF }

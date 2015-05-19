@@ -7,12 +7,12 @@
         <table>
             <tr>
                 <td>
-                    <h2> Bienvenue {{ app.session.get('nom') }} 
-                       {{ app.session.get('prenom') }}
+                    <h2> Bienvenue {{ app.session.get('prenom') }} 
+                       {{ app.session.get('nom') }}
                     </h2> 
                 </td>
                 <td>
-                    <h2> Gestion des Fiches de Frais </h2>
+                    <h2> Gestion des Fiches de Frais Visiteur </h2>
                 </td>
                 <td>
                     <h3>
@@ -49,7 +49,7 @@
             </table>
         </fieldset>
         <br/>
-        <a href="{{ path('gsb_consultation_frais') }}" >
+        <a href="{{ path('gsb_consultation_frais_forfait') }}" >
             Autre Fiche
         </a> 
         &nbsp;&nbsp;&nbsp;&nbsp;

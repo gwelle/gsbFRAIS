@@ -93,7 +93,15 @@ class __TwigTemplate_1b45727df48c90496e9d92de260f0f770d350077f54d4ca0e3a209aba82
         echo "              </fieldset>
               <input class =\"btn-success\" type=\"submit\" value=\"Valider\" 
                            name=\"valider\">
-        </div>    
+              <input class =\"btn-success\" type=\"reset\" value=\"Annuler\" 
+                            name=\"Annuler\">
+        </div>  <br/><br />
+          <a href = \"";
+        // line 31
+        echo $this->env->getExtension('routing')->getPath("gsb_homepage_visiteurs");
+        echo "\"> 
+            Accueil Visiteurs
+        </a>
       </form>
     
       <a href=\"/\">  </a>
@@ -113,6 +121,6 @@ class __TwigTemplate_1b45727df48c90496e9d92de260f0f770d350077f54d4ca0e3a209aba82
 
     public function getDebugInfo()
     {
-        return array (  93 => 25,  84 => 22,  79 => 20,  73 => 17,  69 => 15,  66 => 14,  63 => 13,  60 => 12,  56 => 11,  49 => 7,  43 => 6,  40 => 5,  38 => 4,  32 => 3,  29 => 2,);
+        return array (  101 => 31,  93 => 25,  84 => 22,  79 => 20,  73 => 17,  69 => 15,  66 => 14,  63 => 13,  60 => 12,  56 => 11,  49 => 7,  43 => 6,  40 => 5,  38 => 4,  32 => 3,  29 => 2,);
     }
 }
