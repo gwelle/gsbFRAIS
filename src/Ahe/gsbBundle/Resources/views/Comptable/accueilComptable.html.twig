@@ -1,0 +1,54 @@
+{% extends "AheGsbBundle::layout.html.twig" %}
+{% block messages %}
+<div>
+    {% for flashMessage in app.session.flashbag.get('warning') %}
+        {{ flashMessage }}
+    {% endfor %}
+        
+</div>
+{% endblock %}
+
+{% block body %}
+<br>
+<div class="col-md-3">
+    <fieldset class="accueil">
+        <table>
+            <tr>
+                <td>
+                    <h2> Bienvenue {{ app.session.get('prenom') }} 
+                       {{ app.session.get('nom') }}
+                    </h2> 
+                </td>
+                <td>
+                    <h2> Gestion des Fiches de Frais du Comptable </h2>
+                </td>
+                <td>
+                    <h3>
+                    <a href="{{ path('gsb_comptable_deconnexion') }}" 
+                        accesskey=""title="Déconnexion">
+                        Se déconnecter
+                    </a> 
+                    </h3>
+                </td>
+            </tr>
+        </table>
+        
+            
+    </fieldset>
+        
+    <div class="menu">
+        <ul class="nav">
+            <li> <a href="{{ path('gsb_suivi_paiement_frais') }}"
+                    title="Suivre"><h4>Suivre le paiement d'une fiche de frais</h4>
+                 </a>
+            </li>
+              
+            <li> <a href="{{ path('gsb_valide_frais') }}" 
+                    title="Saisie"><h4>Valider les fiches de frais</h4>
+                 </a> 
+            </li>
+        </ul>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,220 @@
+/* Styles GSB - 2014 */
+body {
+        background-color: whitesmoke ;/*repeat; #77AADD;*/
+        background-attachment: fixed;       
+        margin:0% 0% ;
+        padding: 0.6em;
+        font-family: "Trebuchet MS",Verdana,sans-serif,Arial,Helvetica;
+        font-size: 0.8em;
+}
+
+#page{
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    border: 0.2em solid black;
+    padding: 0.1em;
+}
+
+#entete{
+    /*background:url('bundles/ahegsbBundle/images/logo.png');*/
+    background-color: steelblue;
+    color: #980101;
+    border: solid 0.1em steelblue;
+    border-radius: 10px ;
+    padding: 0em;
+    /*border-collapse: separate;*/ 
+    height:125px ;
+}
+
+#entete #logoGSB {
+    float: left;
+    margin-left: 0.1em;
+    border-radius: 10px ;
+    width: 191px;
+    height: 125px;
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+#entete h1 {
+    color: whitesmoke; 
+    background-color: steelblue ;
+    margin: 0.5em;
+    text-align: center;
+    margin-left: 240px ;
+}
+.menu{
+    background-color: steelblue;
+    margin-left:0.0em ;
+    border-radius: 10px;
+    color:#FFF;
+    height: 100%;
+    width: 100%;
+}
+#contenu h2 {
+    /*background-color: steelblue ;*/
+    color: whitesmoke;
+    margin-left: 2em;
+    text-align: left ;
+    border-radius: 1em ;
+    margin-right: 1em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: x-large ;
+}
+.erreur {
+    background-color: rgb(237,210,229);
+    color: rgb(203,28,128);
+    font-size: 2.1em;
+    width: 80%;
+    text-align: center ;
+    margin-bottom: 2em ;
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em ;
+}
+.identification {
+       padding-bottom: 20px;
+}
+
+.btn-success{
+    color:#fff;
+    background-color:steelblue;
+    border-color:whitesmoke;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success{
+    background-image:none
+}
+.btn-success.disabled,.btn-success[disabled],
+.btn-success,.btn-success.disabled:hover,.btn-success[disabled]:hover,
+.btn-success:hover,.btn-success.disabled:focus,.btn-success[disabled]:focus,
+.btn-success:focus,.btn-success.disabled:active,.btn-success[disabled]:active,
+.btn-success:active,.btn-success.disabled.active,.btn-success[disabled].active,
+.btn-success.active{
+    background-color:steelblue;/*#5cb85c;*/
+    border-color:whitesmoke
+}
+
+.btn-warning{
+    color:#fff;
+    background-color:steelblue;
+    border-color:whitesmoke;  
+}
+.btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active,
+.open .dropdown-toggle.btn-warning{
+    color:#fff;
+    background-color:#ed9c28;
+    border-color:#d58512
+}
+.btn-warning:active,.btn-warning.active,.open .dropdown-toggle.btn-warning{
+    background-image:none
+}
+.btn-warning.disabled,.btn-warning[disabled],fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,.btn-warning[disabled]:hover,fieldset[disabled] 
+.btn-warning:hover,.btn-warning.disabled:focus,.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,.btn-warning.disabled:active,
+.btn-warning[disabled]:active,fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,.btn-warning[disabled].active,fieldset[disabled] 
+.btn-warning.active{
+    background-color:#f0ad4e;
+    border-color:#eea236}
+.btn-danger{
+    color:#fff;
+    background-color:#d9534f;
+    border-color:#d43f3a
+}
+.btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active,
+.open .dropdown-toggle.btn-danger{
+    color:#fff;
+    background-color:#d2322d;
+    border-color:#ac2925
+}
+.btn-danger:active,.btn-danger.active,.open .dropdown-toggle.btn-danger{
+    background-image:none
+}
+.btn-danger.disabled,.btn-danger[disabled],fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,.btn-danger[disabled]:hover,fieldset[disabled] 
+.btn-danger:hover,.btn-danger.disabled:focus,.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,.btn-danger.disabled:active,
+.btn-danger[disabled]:active,fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active{
+    background-color:#d9534f;
+    border-color:#d43f3a
+}
+
+
+
+/*.menu{
+    /*background-color: steelblue;
+    color: #eeffee;  
+    border-radius: 10px;
+    height: 100%;
+}
+*/
+.menu h3 {
+        padding-top: 25px;
+        padding-left: 15px;
+}
+
+
+.menu a {
+        margin-right: 10px;
+        font-size: 22px;
+        color: whitesmoke;
+        text-align: left;
+}
+
+.menu ul li a:hover {
+        font-weight: bold;
+        background: none;
+        
+        
+}
+
+
+.listeMois label {
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: normal;
+}
+
+.buttonsListeMois {
+        margin-top: 15px;
+}
+
+.formLabel {
+    font-size: medium ;
+    font-weight: bold ;
+}
+
+.col-md-3{
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+}
+
+.nav{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+}
+
+.nav>li{position:relative;display:block}
+.nav>li>a{position:relative;display:block;padding:10px 15px}
+.nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eee}
+.nav>li.disabled>a{color:#999}
+.nav>li.disabled>a:hover,.nav>li.disabled>a:focus{color:#999;text-decoration:none;cursor:not-allowed;background-color:transparent}
+.nav .open>a,.nav .open>a:hover,.nav .open>a:focus{background-color:#eee;border-color:#428bca}
+.nav .nav-divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}
+
+.accueil {
+    border-radius: 10px;
+    margin:0.1em;
+}

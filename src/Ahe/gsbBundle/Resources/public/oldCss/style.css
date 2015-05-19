@@ -1,0 +1,15 @@
+/* 
+    Document   : style
+    Created on : 11 nov. 2014, 20:50:42
+    Author     : ahe
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#entete {
+    background-color: steelblue ;
+}
+#entete #logoGSB {
+    background-color: whitesmoke ;
+    position: fixed;
+}
+

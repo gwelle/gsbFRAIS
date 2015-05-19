@@ -1,0 +1,68 @@
+{% extends "AheGsbBundle::layout.html.twig" %}
+{% block body %}
+ {% block bloc1 %}
+  <div class="erreur">
+    {% for message in app.session.flashbag.get('erreurLogMdp') %}
+        {{ message }}
+    {% endfor %}
+  </div>
+
+  <div id="container" >
+  <h1>Identification Visiteur</h1>
+      <form method="POST" {{ form_enctype(form) }} >
+        {{ form_errors(form) }}
+        <table>
+            <tr>
+                <td>
+                    <div class="formLabel">
+                        {{ form_label(form.login, "Login") }}
+                        {{ form_errors(form.login) }}
+                    </div>
+                </td>  
+                <td>
+                    {# Génération de l'input. #}
+                    {{ form_widget(form.login) }} 
+                    
+                        
+                </td>    
+             </tr>  
+             
+             <tr>       
+                <td>
+                    <div class="formLabel">
+                        {{ form_label(form.mdp, "Mot de passe") }}
+                    </div>
+                </td>    
+                <td>   
+                    {# Génération de l'input. #}
+                    {{ form_errors(form.mdp) }}
+                    {{ form_widget(form.mdp) }}  
+                        
+                </td>
+            </tr>
+            
+            <tr>
+                 <td>
+                    <div class="formLabel">
+                        {{ form_label(form.profil, "Profil") }}
+                    </div>
+                 </td>
+                 <td>
+                     {{ form_widget(form.profil) }}
+                     
+                 </td>
+             </tr>
+             
+            <tr>
+                <td><input class ="btn-success" type="submit" value="Valider" 
+                           name="valider"></td>
+                <td><input class="btn-warning" type="reset" value="Annuler" 
+                           name="annuler"></td> 
+            </tr>
+        </table>
+        {{ form_rest(form) }}
+    </form>
+  </div>
+  
+  {% endblock %}
+{% endblock %}

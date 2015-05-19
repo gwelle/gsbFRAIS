@@ -1,0 +1,4 @@
+ahe_gsb:
+    resource: "@AheGsbBundle/Resources/config/routing.yml"
+    prefix:   /
+

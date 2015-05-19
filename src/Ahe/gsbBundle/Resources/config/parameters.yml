@@ -1,0 +1,10 @@
+# Resources/config/parameters
+parameters:
+  pdo.class: PDO
+  pdo.attr_errmode: 3
+  pdo.erromode_exception: 2
+  pdo.options: 
+    %pdo.attr_errmode%: %pdo.erromode_exception%
+  database.db1.dsn: mysql:host=localhost;dbname=gsb2014_041214
+  database.db1.username: root
+  database.db1.password: mysql

@@ -1,0 +1,34 @@
+{% extends "AheGsbBundle::layout.html.twig" %}
+{% block body %}
+{% block bloc1 %}
+{% include 'AheGsbBundle:Visiteurs:erreurs.html.twig' with {'lesErreurs':lesErreursForfait } %}
+  
+    <h2> Fiche de frais du mois {{numMois}}-{{numAnnee}}</h2>
+      <form action="{{ path('gsb_saisie_frais') }}" method="POST">
+          <div class="corpsForm">    
+            <fieldset>
+                <legend>Frais au Forfait : </legend>
+                     {% for unFrais in  lesFraisForfait %}
+                         {% set idFrais = unFrais.idFrais %}
+                         {% set libelle = unFrais.libelle %}
+                         {% set quantite = unFrais.quantite %}
+                        <p>
+                            <label class="col-md-offset-1 col-lg-3" 
+                                   for="idFrais"> {{ libelle }} 
+                            </label>
+                            <input type="text" id="idFrais" 
+                                   name="lesFrais[{{ idFrais }}]" 
+                                   size="10" maxlength="5" 
+                                   value="{{ quantite }}" >
+                        </p>
+                     {%endfor%}
+              </fieldset>
+              <input class ="btn-success" type="submit" value="Valider" 
+                           name="valider">
+        </div>    
+      </form>
+    
+      <a href="/">  </a>
+</div>
+{% endblock %}
+{% endblock %}  
